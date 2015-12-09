@@ -220,7 +220,6 @@
 				TargetAttributes = {
 					FF7D4E901C17271600053948 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = L9R8XX4GKX;
 					};
 					FF7D4EA41C17271600053948 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -476,6 +475,7 @@
 			baseConfigurationReference = C89AAC1F7BAACD4D5BFA47CC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = imitateDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.papa.imitateDay;
@@ -488,6 +488,7 @@
 			baseConfigurationReference = 2D2742DEC2A4D76A945F8B24 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = imitateDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.papa.imitateDay;
