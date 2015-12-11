@@ -8,7 +8,16 @@
 
 import UIKit
 
-class ExplorerViewController: MainViewController
-{
+class ExplorerViewController: MainViewController{
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // 设置导航器
+        setNavigator()
+    }
+    
+    private func setNavigator(){
+        
+    }
 }

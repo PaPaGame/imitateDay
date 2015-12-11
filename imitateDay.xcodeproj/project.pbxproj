@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		89B08F2C985A8DB969EE4494 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B652474FF7162D00C450F95A /* Pods.framework */; };
+		FF2FFBBD1C1B2A0B00B1A8F0 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2FFBBC1C1B2A0B00B1A8F0 /* UIView+.swift */; };
 		FF7723311C19BD0B00C144BF /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7723301C19BD0B00C144BF /* AppConstant.swift */; };
 		FF7723341C19BDF500C144BF /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7723331C19BDF500C144BF /* Theme.swift */; };
 		FF7723381C19BFBB00C144BF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7723371C19BFBB00C144BF /* MainTabBarController.swift */; };
@@ -44,6 +45,7 @@
 		2D2742DEC2A4D76A945F8B24 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B652474FF7162D00C450F95A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89AAC1F7BAACD4D5BFA47CC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FF2FFBBC1C1B2A0B00B1A8F0 /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+.swift"; path = "extensions/UIView+.swift"; sourceTree = "<group>"; };
 		FF7723301C19BD0B00C144BF /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConstant.swift; path = constant/AppConstant.swift; sourceTree = "<group>"; };
 		FF7723331C19BDF500C144BF /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = theme/Theme.swift; sourceTree = "<group>"; };
 		FF7723371C19BFBB00C144BF /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarController.swift; path = UI/main/MainTabBarController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 				2D2742DEC2A4D76A945F8B24 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FF2FFBBB1C1B28E700B1A8F0 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FF2FFBBC1C1B2A0B00B1A8F0 /* UIView+.swift */,
+			);
+			name = extensions;
 			sourceTree = "<group>";
 		};
 		FF77232F1C19BCEA00C144BF /* constant */ = {
@@ -176,6 +186,7 @@
 		FF7D4E931C17271600053948 /* imitateDay */ = {
 			isa = PBXGroup;
 			children = (
+				FF2FFBBB1C1B28E700B1A8F0 /* extensions */,
 				FF7723351C19BF8500C144BF /* UI */,
 				FF7723321C19BDBC00C144BF /* theme */,
 				FF77232F1C19BCEA00C144BF /* constant */,
@@ -397,6 +408,7 @@
 				FF7723381C19BFBB00C144BF /* MainTabBarController.swift in Sources */,
 				FF77233D1C19C1E500C144BF /* ExplorerViewController.swift in Sources */,
 				FF77233B1C19C1A800C144BF /* MainViewController.swift in Sources */,
+				FF2FFBBD1C1B2A0B00B1A8F0 /* UIView+.swift in Sources */,
 				FF7D4E971C17271600053948 /* ViewController.swift in Sources */,
 				FF7D4E951C17271600053948 /* AppDelegate.swift in Sources */,
 			);
