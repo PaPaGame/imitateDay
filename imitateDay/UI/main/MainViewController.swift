@@ -6,4 +6,8 @@
 //  Copyright © 2015年 papa.studio. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class MainViewController: UIViewController {
+    
+}

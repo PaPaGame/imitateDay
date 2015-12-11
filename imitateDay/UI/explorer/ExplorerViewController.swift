@@ -6,8 +6,9 @@
 //  Copyright © 2015年 papa.studio. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
-class ExplorerViewController: MainViewController {
+class ExplorerViewController: MainViewController
+{
 
 }

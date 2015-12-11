@@ -15,7 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+        // 设置主窗体
+        setKeyWindow()
+        //  app 呈现
+        setAppAppearance()
         return true
     }
 
@@ -40,7 +44,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    private func setKeyWindow() {
+        window = UIWindow(frame: MainBounds)
+        
+        window?.rootViewController = showSplashScreen()
+        
+        window?.makeKeyAndVisible()
+    }
 
+    private func setAppAppearance() {
+       
+    }
+    
+    private func showSplashScreen()-> UIViewController {
+        // 判断版本 是否显示 欢迎页
+        // 将版本信息 存入UserDefault
+        // return SplashScreenController
+        
+        return MainTabBarController()
+    }
+    
+    
 
 }
 

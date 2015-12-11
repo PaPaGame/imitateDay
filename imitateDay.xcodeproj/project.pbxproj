@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		89B08F2C985A8DB969EE4494 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B652474FF7162D00C450F95A /* Pods.framework */; };
+		FF7723311C19BD0B00C144BF /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7723301C19BD0B00C144BF /* AppConstant.swift */; };
+		FF7723341C19BDF500C144BF /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7723331C19BDF500C144BF /* Theme.swift */; };
+		FF7723381C19BFBB00C144BF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7723371C19BFBB00C144BF /* MainTabBarController.swift */; };
+		FF77233B1C19C1A800C144BF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77233A1C19C1A800C144BF /* MainViewController.swift */; };
+		FF77233D1C19C1E500C144BF /* ExplorerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77233C1C19C1E500C144BF /* ExplorerViewController.swift */; };
+		FF77233F1C19C3C400C144BF /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77233E1C19C3C400C144BF /* MainNavigationController.swift */; };
 		FF7D4E951C17271600053948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7D4E941C17271600053948 /* AppDelegate.swift */; };
 		FF7D4E971C17271600053948 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7D4E961C17271600053948 /* ViewController.swift */; };
 		FF7D4E9A1C17271600053948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7D4E981C17271600053948 /* Main.storyboard */; };
@@ -38,6 +44,12 @@
 		2D2742DEC2A4D76A945F8B24 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B652474FF7162D00C450F95A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89AAC1F7BAACD4D5BFA47CC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FF7723301C19BD0B00C144BF /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConstant.swift; path = constant/AppConstant.swift; sourceTree = "<group>"; };
+		FF7723331C19BDF500C144BF /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = theme/Theme.swift; sourceTree = "<group>"; };
+		FF7723371C19BFBB00C144BF /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarController.swift; path = UI/main/MainTabBarController.swift; sourceTree = "<group>"; };
+		FF77233A1C19C1A800C144BF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = UI/main/MainViewController.swift; sourceTree = "<group>"; };
+		FF77233C1C19C1E500C144BF /* ExplorerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExplorerViewController.swift; path = UI/explorer/ExplorerViewController.swift; sourceTree = "<group>"; };
+		FF77233E1C19C3C400C144BF /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainNavigationController.swift; path = UI/main/MainNavigationController.swift; sourceTree = "<group>"; };
 		FF7D4E911C17271600053948 /* imitateDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imitateDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7D4E941C17271600053948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF7D4E961C17271600053948 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +108,49 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FF77232F1C19BCEA00C144BF /* constant */ = {
+			isa = PBXGroup;
+			children = (
+				FF7723301C19BD0B00C144BF /* AppConstant.swift */,
+			);
+			name = constant;
+			sourceTree = "<group>";
+		};
+		FF7723321C19BDBC00C144BF /* theme */ = {
+			isa = PBXGroup;
+			children = (
+				FF7723331C19BDF500C144BF /* Theme.swift */,
+			);
+			name = theme;
+			sourceTree = "<group>";
+		};
+		FF7723351C19BF8500C144BF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FF7723391C19C15100C144BF /* explorer */,
+				FF7723361C19BF9600C144BF /* main */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		FF7723361C19BF9600C144BF /* main */ = {
+			isa = PBXGroup;
+			children = (
+				FF7723371C19BFBB00C144BF /* MainTabBarController.swift */,
+				FF77233A1C19C1A800C144BF /* MainViewController.swift */,
+				FF77233E1C19C3C400C144BF /* MainNavigationController.swift */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		FF7723391C19C15100C144BF /* explorer */ = {
+			isa = PBXGroup;
+			children = (
+				FF77233C1C19C1E500C144BF /* ExplorerViewController.swift */,
+			);
+			name = explorer;
+			sourceTree = "<group>";
+		};
 		FF7D4E881C17271600053948 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +176,9 @@
 		FF7D4E931C17271600053948 /* imitateDay */ = {
 			isa = PBXGroup;
 			children = (
+				FF7723351C19BF8500C144BF /* UI */,
+				FF7723321C19BDBC00C144BF /* theme */,
+				FF77232F1C19BCEA00C144BF /* constant */,
 				FF7D4E941C17271600053948 /* AppDelegate.swift */,
 				FF7D4E961C17271600053948 /* ViewController.swift */,
 				FF7D4E981C17271600053948 /* Main.storyboard */,
@@ -333,6 +391,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF7723311C19BD0B00C144BF /* AppConstant.swift in Sources */,
+				FF7723341C19BDF500C144BF /* Theme.swift in Sources */,
+				FF77233F1C19C3C400C144BF /* MainNavigationController.swift in Sources */,
+				FF7723381C19BFBB00C144BF /* MainTabBarController.swift in Sources */,
+				FF77233D1C19C1E500C144BF /* ExplorerViewController.swift in Sources */,
+				FF77233B1C19C1A800C144BF /* MainViewController.swift in Sources */,
 				FF7D4E971C17271600053948 /* ViewController.swift in Sources */,
 				FF7D4E951C17271600053948 /* AppDelegate.swift in Sources */,
 			);
