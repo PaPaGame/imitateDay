@@ -15,5 +15,10 @@ public let AppHeight: CGFloat = UIScreen.mainScreen().bounds.height
  /// app 的宽度
 public let AppWidth: CGFloat = UIScreen.mainScreen().bounds.width
 
+struct theme {
+    static let DefaultFontSize = UIFont.systemFontOfSize(16)
+    
+    static let DefaultNavFontSize = UIFont.systemFontOfSize(18)
+}
 
 

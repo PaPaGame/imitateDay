@@ -22,6 +22,7 @@
 		FF7D4E9F1C17271600053948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7D4E9D1C17271600053948 /* LaunchScreen.storyboard */; };
 		FF7D4EAA1C17271600053948 /* imitateDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7D4EA91C17271600053948 /* imitateDayTests.swift */; };
 		FF7D4EB51C17271600053948 /* imitateDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7D4EB41C17271600053948 /* imitateDayUITests.swift */; };
+		FFD89DBE1C1D81F6007F4479 /* TabViewStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD89DBD1C1D81F6007F4479 /* TabViewStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,13 +46,13 @@
 		2D2742DEC2A4D76A945F8B24 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B652474FF7162D00C450F95A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89AAC1F7BAACD4D5BFA47CC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		FF2FFBBC1C1B2A0B00B1A8F0 /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+.swift"; path = "extensions/UIView+.swift"; sourceTree = "<group>"; };
-		FF7723301C19BD0B00C144BF /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConstant.swift; path = constant/AppConstant.swift; sourceTree = "<group>"; };
-		FF7723331C19BDF500C144BF /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = theme/Theme.swift; sourceTree = "<group>"; };
-		FF7723371C19BFBB00C144BF /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarController.swift; path = UI/main/MainTabBarController.swift; sourceTree = "<group>"; };
-		FF77233A1C19C1A800C144BF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = UI/main/MainViewController.swift; sourceTree = "<group>"; };
-		FF77233C1C19C1E500C144BF /* ExplorerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExplorerViewController.swift; path = UI/explorer/ExplorerViewController.swift; sourceTree = "<group>"; };
-		FF77233E1C19C3C400C144BF /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainNavigationController.swift; path = UI/main/MainNavigationController.swift; sourceTree = "<group>"; };
+		FF2FFBBC1C1B2A0B00B1A8F0 /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		FF7723301C19BD0B00C144BF /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		FF7723331C19BDF500C144BF /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		FF7723371C19BFBB00C144BF /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		FF77233A1C19C1A800C144BF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FF77233C1C19C1E500C144BF /* ExplorerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplorerViewController.swift; sourceTree = "<group>"; };
+		FF77233E1C19C3C400C144BF /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		FF7D4E911C17271600053948 /* imitateDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imitateDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7D4E941C17271600053948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF7D4E961C17271600053948 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 		FF7D4EB01C17271600053948 /* imitateDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imitateDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7D4EB41C17271600053948 /* imitateDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imitateDayUITests.swift; sourceTree = "<group>"; };
 		FF7D4EB61C17271600053948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFD89DBD1C1D81F6007F4479 /* TabViewStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +117,7 @@
 			children = (
 				FF2FFBBC1C1B2A0B00B1A8F0 /* UIView+.swift */,
 			);
-			name = extensions;
+			path = extensions;
 			sourceTree = "<group>";
 		};
 		FF77232F1C19BCEA00C144BF /* constant */ = {
@@ -123,7 +125,7 @@
 			children = (
 				FF7723301C19BD0B00C144BF /* AppConstant.swift */,
 			);
-			name = constant;
+			path = constant;
 			sourceTree = "<group>";
 		};
 		FF7723321C19BDBC00C144BF /* theme */ = {
@@ -131,26 +133,27 @@
 			children = (
 				FF7723331C19BDF500C144BF /* Theme.swift */,
 			);
-			name = theme;
+			path = theme;
 			sourceTree = "<group>";
 		};
 		FF7723351C19BF8500C144BF /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FFD89DBC1C1D8147007F4479 /* components */,
 				FF7723391C19C15100C144BF /* explorer */,
 				FF7723361C19BF9600C144BF /* main */,
 			);
-			name = UI;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		FF7723361C19BF9600C144BF /* main */ = {
 			isa = PBXGroup;
 			children = (
+				FF77233E1C19C3C400C144BF /* MainNavigationController.swift */,
 				FF7723371C19BFBB00C144BF /* MainTabBarController.swift */,
 				FF77233A1C19C1A800C144BF /* MainViewController.swift */,
-				FF77233E1C19C3C400C144BF /* MainNavigationController.swift */,
 			);
-			name = main;
+			path = main;
 			sourceTree = "<group>";
 		};
 		FF7723391C19C15100C144BF /* explorer */ = {
@@ -158,18 +161,18 @@
 			children = (
 				FF77233C1C19C1E500C144BF /* ExplorerViewController.swift */,
 			);
-			name = explorer;
+			path = explorer;
 			sourceTree = "<group>";
 		};
 		FF7D4E881C17271600053948 = {
 			isa = PBXGroup;
 			children = (
+				85D7F0A7FD4712393F6BB174 /* Frameworks */,
+				E4651B8A0D49949488BC8443 /* Pods */,
+				FF7D4E921C17271600053948 /* Products */,
 				FF7D4E931C17271600053948 /* imitateDay */,
 				FF7D4EA81C17271600053948 /* imitateDayTests */,
 				FF7D4EB31C17271600053948 /* imitateDayUITests */,
-				FF7D4E921C17271600053948 /* Products */,
-				E4651B8A0D49949488BC8443 /* Pods */,
-				85D7F0A7FD4712393F6BB174 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,16 +189,16 @@
 		FF7D4E931C17271600053948 /* imitateDay */ = {
 			isa = PBXGroup;
 			children = (
-				FF2FFBBB1C1B28E700B1A8F0 /* extensions */,
 				FF7723351C19BF8500C144BF /* UI */,
-				FF7723321C19BDBC00C144BF /* theme */,
 				FF77232F1C19BCEA00C144BF /* constant */,
+				FF2FFBBB1C1B28E700B1A8F0 /* extensions */,
+				FF7723321C19BDBC00C144BF /* theme */,
 				FF7D4E941C17271600053948 /* AppDelegate.swift */,
-				FF7D4E961C17271600053948 /* ViewController.swift */,
-				FF7D4E981C17271600053948 /* Main.storyboard */,
 				FF7D4E9B1C17271600053948 /* Assets.xcassets */,
-				FF7D4E9D1C17271600053948 /* LaunchScreen.storyboard */,
 				FF7D4EA01C17271600053948 /* Info.plist */,
+				FF7D4E9D1C17271600053948 /* LaunchScreen.storyboard */,
+				FF7D4E981C17271600053948 /* Main.storyboard */,
+				FF7D4E961C17271600053948 /* ViewController.swift */,
 			);
 			path = imitateDay;
 			sourceTree = "<group>";
@@ -203,8 +206,8 @@
 		FF7D4EA81C17271600053948 /* imitateDayTests */ = {
 			isa = PBXGroup;
 			children = (
-				FF7D4EA91C17271600053948 /* imitateDayTests.swift */,
 				FF7D4EAB1C17271600053948 /* Info.plist */,
+				FF7D4EA91C17271600053948 /* imitateDayTests.swift */,
 			);
 			path = imitateDayTests;
 			sourceTree = "<group>";
@@ -212,10 +215,18 @@
 		FF7D4EB31C17271600053948 /* imitateDayUITests */ = {
 			isa = PBXGroup;
 			children = (
-				FF7D4EB41C17271600053948 /* imitateDayUITests.swift */,
 				FF7D4EB61C17271600053948 /* Info.plist */,
+				FF7D4EB41C17271600053948 /* imitateDayUITests.swift */,
 			);
 			path = imitateDayUITests;
+			sourceTree = "<group>";
+		};
+		FFD89DBC1C1D8147007F4479 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				FFD89DBD1C1D81F6007F4479 /* TabViewStack.swift */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,6 +420,7 @@
 				FF77233D1C19C1E500C144BF /* ExplorerViewController.swift in Sources */,
 				FF77233B1C19C1A800C144BF /* MainViewController.swift in Sources */,
 				FF2FFBBD1C1B2A0B00B1A8F0 /* UIView+.swift in Sources */,
+				FFD89DBE1C1D81F6007F4479 /* TabViewStack.swift in Sources */,
 				FF7D4E971C17271600053948 /* ViewController.swift in Sources */,
 				FF7D4E951C17271600053948 /* AppDelegate.swift in Sources */,
 			);
@@ -452,6 +464,7 @@
 				FF7D4E991C17271600053948 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		FF7D4E9D1C17271600053948 /* LaunchScreen.storyboard */ = {
@@ -460,6 +473,7 @@
 				FF7D4E9E1C17271600053948 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -18,6 +18,8 @@ class ExplorerViewController: MainViewController{
     }
     
     private func setNavigator(){
-        
+        let viewStack = TabViewStack(leftText: "Hello", rightText: "World")
+        viewStack.frame = CGRectMake(0, 0, 120, 44)
+        navigationItem.titleView = viewStack
     }
 }
