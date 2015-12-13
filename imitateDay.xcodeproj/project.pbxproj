@@ -23,6 +23,8 @@
 		FF7D4EAA1C17271600053948 /* imitateDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7D4EA91C17271600053948 /* imitateDayTests.swift */; };
 		FF7D4EB51C17271600053948 /* imitateDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7D4EB41C17271600053948 /* imitateDayUITests.swift */; };
 		FFD89DBE1C1D81F6007F4479 /* TabViewStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD89DBD1C1D81F6007F4479 /* TabViewStack.swift */; };
+		FFF2FAD51C1DA81B00C00CA7 /* EveryDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF2FAD41C1DA81B00C00CA7 /* EveryDayCell.xib */; };
+		FFF2FAD71C1DA88500C00CA7 /* EveryDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2FAD61C1DA88500C00CA7 /* EveryDayCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		FF7D4EB41C17271600053948 /* imitateDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imitateDayUITests.swift; sourceTree = "<group>"; };
 		FF7D4EB61C17271600053948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFD89DBD1C1D81F6007F4479 /* TabViewStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewStack.swift; sourceTree = "<group>"; };
+		FFF2FAD41C1DA81B00C00CA7 /* EveryDayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EveryDayCell.xib; sourceTree = "<group>"; };
+		FFF2FAD61C1DA88500C00CA7 /* EveryDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EveryDayCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				FF77233C1C19C1E500C144BF /* ExplorerViewController.swift */,
+				FFF2FAD41C1DA81B00C00CA7 /* EveryDayCell.xib */,
+				FFF2FAD61C1DA88500C00CA7 /* EveryDayCell.swift */,
 			);
 			path = explorer;
 			sourceTree = "<group>";
@@ -340,6 +346,7 @@
 			files = (
 				FF7D4E9F1C17271600053948 /* LaunchScreen.storyboard in Resources */,
 				FF7D4E9C1C17271600053948 /* Assets.xcassets in Resources */,
+				FFF2FAD51C1DA81B00C00CA7 /* EveryDayCell.xib in Resources */,
 				FF7D4E9A1C17271600053948 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +426,7 @@
 				FF7723381C19BFBB00C144BF /* MainTabBarController.swift in Sources */,
 				FF77233D1C19C1E500C144BF /* ExplorerViewController.swift in Sources */,
 				FF77233B1C19C1A800C144BF /* MainViewController.swift in Sources */,
+				FFF2FAD71C1DA88500C00CA7 /* EveryDayCell.swift in Sources */,
 				FF2FFBBD1C1B2A0B00B1A8F0 /* UIView+.swift in Sources */,
 				FFD89DBE1C1D81F6007F4479 /* TabViewStack.swift in Sources */,
 				FF7D4E971C17271600053948 /* ViewController.swift in Sources */,

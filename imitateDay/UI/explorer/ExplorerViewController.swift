@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ExplorerViewController: MainViewController{
+class ExplorerViewController: MainViewController, TabViewStackProtocol{
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,8 +18,20 @@ class ExplorerViewController: MainViewController{
     }
     
     private func setNavigator(){
-        let viewStack = TabViewStack(leftText: "Hello", rightText: "World")
+        let viewStack = TabViewStack(leftText: "美天", rightText: "美辑")
         viewStack.frame = CGRectMake(0, 0, 120, 44)
         navigationItem.titleView = viewStack
+    }
+}
+
+extension ExplorerViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        
+        return cell
     }
 }
