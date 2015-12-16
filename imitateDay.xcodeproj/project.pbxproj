@@ -22,6 +22,8 @@
 		FF7D4E9F1C17271600053948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7D4E9D1C17271600053948 /* LaunchScreen.storyboard */; };
 		FF7D4EAA1C17271600053948 /* imitateDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7D4EA91C17271600053948 /* imitateDayTests.swift */; };
 		FF7D4EB51C17271600053948 /* imitateDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7D4EB41C17271600053948 /* imitateDayUITests.swift */; };
+		FF94523A1C218F7E002149D0 /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9452391C218F7E002149D0 /* MainTableView.swift */; };
+		FF94523C1C219B4B002149D0 /* UIColor+SColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94523B1C219B4B002149D0 /* UIColor+SColor.swift */; };
 		FFD89DBE1C1D81F6007F4479 /* TabViewStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD89DBD1C1D81F6007F4479 /* TabViewStack.swift */; };
 		FFF2FAD51C1DA81B00C00CA7 /* EveryDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF2FAD41C1DA81B00C00CA7 /* EveryDayCell.xib */; };
 		FFF2FAD71C1DA88500C00CA7 /* EveryDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2FAD61C1DA88500C00CA7 /* EveryDayCell.swift */; };
@@ -68,6 +70,8 @@
 		FF7D4EB01C17271600053948 /* imitateDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imitateDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7D4EB41C17271600053948 /* imitateDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imitateDayUITests.swift; sourceTree = "<group>"; };
 		FF7D4EB61C17271600053948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF9452391C218F7E002149D0 /* MainTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTableView.swift; path = imitateDay/MainTableView.swift; sourceTree = SOURCE_ROOT; };
+		FF94523B1C219B4B002149D0 /* UIColor+SColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+SColor.swift"; sourceTree = "<group>"; };
 		FFD89DBD1C1D81F6007F4479 /* TabViewStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewStack.swift; sourceTree = "<group>"; };
 		FFF2FAD41C1DA81B00C00CA7 /* EveryDayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EveryDayCell.xib; sourceTree = "<group>"; };
 		FFF2FAD61C1DA88500C00CA7 /* EveryDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EveryDayCell.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				FF2FFBBC1C1B2A0B00B1A8F0 /* UIView+.swift */,
+				FF94523B1C219B4B002149D0 /* UIColor+SColor.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				FF77233E1C19C3C400C144BF /* MainNavigationController.swift */,
 				FF7723371C19BFBB00C144BF /* MainTabBarController.swift */,
 				FF77233A1C19C1A800C144BF /* MainViewController.swift */,
+				FF9452391C218F7E002149D0 /* MainTableView.swift */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -426,7 +432,9 @@
 				FF7723381C19BFBB00C144BF /* MainTabBarController.swift in Sources */,
 				FF77233D1C19C1E500C144BF /* ExplorerViewController.swift in Sources */,
 				FF77233B1C19C1A800C144BF /* MainViewController.swift in Sources */,
+				FF94523A1C218F7E002149D0 /* MainTableView.swift in Sources */,
 				FFF2FAD71C1DA88500C00CA7 /* EveryDayCell.swift in Sources */,
+				FF94523C1C219B4B002149D0 /* UIColor+SColor.swift in Sources */,
 				FF2FFBBD1C1B2A0B00B1A8F0 /* UIView+.swift in Sources */,
 				FFD89DBE1C1D81F6007F4479 /* TabViewStack.swift in Sources */,
 				FF7D4E971C17271600053948 /* ViewController.swift in Sources */,
