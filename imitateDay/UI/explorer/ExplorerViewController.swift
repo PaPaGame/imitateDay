@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PullToRefresh
 
 class ExplorerViewController: MainViewController, TabViewStackProtocol{
 
@@ -65,6 +66,16 @@ class ExplorerViewController: MainViewController, TabViewStackProtocol{
         
         dayView = MainTableView(frame: CGRectMake(0, 0, AppWidth, AppHeight - NavigationHeight), style: .Grouped, dataSource: self, delegate: self)
         scrollView.addSubview(dayView)
+        dayView.addPullToRefresh(SPullToRefresh(), action: {
+            // 创建一个延时
+            let delayTime = dispatch_time(DISPATCH_TIME_NOW,
+                Int64(0.5 * Double(NSEC_PER_SEC)))
+            dispatch_after(delayTime, dispatch_get_main_queue()) {
+                // 获取数据 1:成功,2:失败返回
+                // 停止刷新
+                // 列表加载新数据
+            }
+        })
     }
     
     

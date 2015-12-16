@@ -24,6 +24,8 @@
 		FF7D4EB51C17271600053948 /* imitateDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7D4EB41C17271600053948 /* imitateDayUITests.swift */; };
 		FF94523A1C218F7E002149D0 /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9452391C218F7E002149D0 /* MainTableView.swift */; };
 		FF94523C1C219B4B002149D0 /* UIColor+SColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94523B1C219B4B002149D0 /* UIColor+SColor.swift */; };
+		FF94523E1C21AD2B002149D0 /* MainTableView+PullRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94523D1C21AD2B002149D0 /* MainTableView+PullRefresh.swift */; };
+		FF9452401C21BAEC002149D0 /* SPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94523F1C21BAEC002149D0 /* SPullToRefresh.swift */; };
 		FFD89DBE1C1D81F6007F4479 /* TabViewStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD89DBD1C1D81F6007F4479 /* TabViewStack.swift */; };
 		FFF2FAD51C1DA81B00C00CA7 /* EveryDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF2FAD41C1DA81B00C00CA7 /* EveryDayCell.xib */; };
 		FFF2FAD71C1DA88500C00CA7 /* EveryDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2FAD61C1DA88500C00CA7 /* EveryDayCell.swift */; };
@@ -72,6 +74,8 @@
 		FF7D4EB61C17271600053948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF9452391C218F7E002149D0 /* MainTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTableView.swift; path = imitateDay/MainTableView.swift; sourceTree = SOURCE_ROOT; };
 		FF94523B1C219B4B002149D0 /* UIColor+SColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+SColor.swift"; sourceTree = "<group>"; };
+		FF94523D1C21AD2B002149D0 /* MainTableView+PullRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainTableView+PullRefresh.swift"; sourceTree = "<group>"; };
+		FF94523F1C21BAEC002149D0 /* SPullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPullToRefresh.swift; sourceTree = "<group>"; };
 		FFD89DBD1C1D81F6007F4479 /* TabViewStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewStack.swift; sourceTree = "<group>"; };
 		FFF2FAD41C1DA81B00C00CA7 /* EveryDayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EveryDayCell.xib; sourceTree = "<group>"; };
 		FFF2FAD61C1DA88500C00CA7 /* EveryDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EveryDayCell.swift; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 			children = (
 				FF2FFBBC1C1B2A0B00B1A8F0 /* UIView+.swift */,
 				FF94523B1C219B4B002149D0 /* UIColor+SColor.swift */,
+				FF94523D1C21AD2B002149D0 /* MainTableView+PullRefresh.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -201,6 +206,7 @@
 		FF7D4E931C17271600053948 /* imitateDay */ = {
 			isa = PBXGroup;
 			children = (
+				FF9452411C21C3B3002149D0 /* model */,
 				FF7723351C19BF8500C144BF /* UI */,
 				FF77232F1C19BCEA00C144BF /* constant */,
 				FF2FFBBB1C1B28E700B1A8F0 /* extensions */,
@@ -233,10 +239,18 @@
 			path = imitateDayUITests;
 			sourceTree = "<group>";
 		};
+		FF9452411C21C3B3002149D0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 		FFD89DBC1C1D8147007F4479 /* components */ = {
 			isa = PBXGroup;
 			children = (
 				FFD89DBD1C1D81F6007F4479 /* TabViewStack.swift */,
+				FF94523F1C21BAEC002149D0 /* SPullToRefresh.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -430,6 +444,7 @@
 				FF7723341C19BDF500C144BF /* Theme.swift in Sources */,
 				FF77233F1C19C3C400C144BF /* MainNavigationController.swift in Sources */,
 				FF7723381C19BFBB00C144BF /* MainTabBarController.swift in Sources */,
+				FF94523E1C21AD2B002149D0 /* MainTableView+PullRefresh.swift in Sources */,
 				FF77233D1C19C1E500C144BF /* ExplorerViewController.swift in Sources */,
 				FF77233B1C19C1A800C144BF /* MainViewController.swift in Sources */,
 				FF94523A1C218F7E002149D0 /* MainTableView.swift in Sources */,
@@ -439,6 +454,7 @@
 				FFD89DBE1C1D81F6007F4479 /* TabViewStack.swift in Sources */,
 				FF7D4E971C17271600053948 /* ViewController.swift in Sources */,
 				FF7D4E951C17271600053948 /* AppDelegate.swift in Sources */,
+				FF9452401C21BAEC002149D0 /* SPullToRefresh.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
