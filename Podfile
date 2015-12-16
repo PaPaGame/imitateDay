@@ -8,3 +8,5 @@ pod 'SwiftyJSON'
 pod 'Haneke'
 pod 'XCGLogger'
 pod 'Kingfisher'
+# 下拉刷新
+pod 'PullToRefresher'
