@@ -17,7 +17,10 @@ class DayModel: NSObject {
     var list:[Day]?
     
     class func loadData(complete: (data:DayModel, error:NSError?) -> ()) {
-        
+        NetManager.sharedInstance.request("renren.com", params: nil) {
+            (data, error) in
+            print(data)
+        }
     }
 }
 

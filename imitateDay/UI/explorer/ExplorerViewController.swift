@@ -74,6 +74,10 @@ class ExplorerViewController: MainViewController, TabViewStackProtocol{
                 // 获取数据 1:成功,2:失败返回
                 // 停止刷新
                 // 列表加载新数据
+                DayModel.loadData(){
+                    (_, _) in
+                    print("hello")
+                }
             }
         })
     }
