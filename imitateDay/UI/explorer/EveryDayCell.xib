@@ -30,7 +30,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oct." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INX-JZ-f2F">
                         <rect key="frame" x="36" y="34" width="28" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fY1-8q-aYS">
@@ -41,7 +41,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一个充满幸福感的&quot;花花世界&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkD-zv-Lrj">
                         <rect key="frame" x="10" y="54" width="292" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="海淀区 海淀区海淀桥东南角中关村创业大街1号楼A入口(3W咖啡厅对面)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vm8-V4-nOX">
@@ -56,7 +56,7 @@
                             <constraint firstAttribute="height" constant="21" id="guA-OV-FMP"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                         <variation key="default">
                             <mask key="constraints">
@@ -87,6 +87,14 @@
                     <constraint firstItem="Vm8-V4-nOX" firstAttribute="leading" secondItem="mFV-N6-5EJ" secondAttribute="leadingMargin" constant="10" id="zEB-sF-Tjd"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="imgBG" destination="ACP-ha-fq6" id="ep1-Zy-0Wq"/>
+                <outlet property="lblCellTitle" destination="bQ9-pm-dY7" id="MmM-lT-iAF"/>
+                <outlet property="lblDay" destination="fY1-8q-aYS" id="rI0-wY-Bds"/>
+                <outlet property="lblMonth" destination="INX-JZ-f2F" id="VI1-Xy-ney"/>
+                <outlet property="lblSubTitle" destination="Vm8-V4-nOX" id="cOp-Id-4N6"/>
+                <outlet property="lblTitle" destination="nkD-zv-Lrj" id="zBg-Nq-fhg"/>
+            </connections>
             <point key="canvasLocation" x="682" y="395"/>
         </tableViewCell>
     </objects>

@@ -10,7 +10,7 @@ import UIKit
 import PullToRefresh
 
 class ExplorerViewController: MainViewController, TabViewStackProtocol{
-
+    
     private var scrollView: UIScrollView!
     
     private var dayView: MainTableView!
@@ -44,9 +44,9 @@ class ExplorerViewController: MainViewController, TabViewStackProtocol{
         // http://m.blog.csdn.net/blog/humingtao2013/27662093
         self.automaticallyAdjustsScrollViewInsets = false
         
-        scrollView = UIScrollView(frame: CGRectMake(0, 0, AppWidth * 2, AppHeight - NavigationHeight - 49)) //49 为tabbar的高度
+        scrollView = UIScrollView(frame: CGRectMake(0, NavigationHeight, AppWidth * 2, AppHeight - NavigationHeight - 49)) //49 为tabbar的高度
         // 背景颜色
-        scrollView.backgroundColor = theme.SBackgroundColor
+        scrollView.backgroundColor = UIColor.redColor()//theme.SBackgroundColor
         scrollView.contentSize = CGSizeMake(AppWidth * 2, 0)
         // 不显示横竖滚动条
         scrollView.showsHorizontalScrollIndicator = false
@@ -74,9 +74,13 @@ class ExplorerViewController: MainViewController, TabViewStackProtocol{
                 // 获取数据 1:成功,2:失败返回
                 // 停止刷新
                 // 列表加载新数据
-                DayModel.loadData(){
-                    (_, _) in
-                    print("hello")
+                DayModel.loadData(){ data, error in
+                    self.dayView.endRefreshing()
+                    if error != nil {
+                        return
+                    }
+                    // dayView.reload
+                    
                 }
             }
         })
@@ -93,11 +97,20 @@ class ExplorerViewController: MainViewController, TabViewStackProtocol{
 
 extension ExplorerViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 1
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell:UITableViewCell
+        
+        switch tableView{
+        case dayView:
+            cell = EveryDayCell()
+        case albumView:
+            cell = EveryDayCell()
+        default:
+            cell = EveryDayCell()
+        }
         
         return cell
     }

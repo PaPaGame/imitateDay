@@ -9,6 +9,21 @@
 import UIKit
 
 class EveryDayCell: UITableViewCell {
+    
+    @IBOutlet weak var lblCellTitle: UILabel!
+    @IBOutlet weak var lblMonth: UILabel!
+    @IBOutlet weak var lblDay: UILabel!
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblSubTitle: UILabel!
+    @IBOutlet weak var imgBG: UIImageView!
+    
+    var data:Day? {
+        didSet {
+//            lblCellTitle.text = data?.events?.last.
+            
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = .None

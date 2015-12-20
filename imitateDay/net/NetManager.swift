@@ -21,7 +21,7 @@ class NetManager {
     func request(baseUrl: String, params: [String: String]?, complete: completion) {
         Alamofire.request(.GET, baseUrl, parameters: params).responseJSON(){
             response in
-                print(response.data)
+//                print(response.result.value)
         }
     }
 }

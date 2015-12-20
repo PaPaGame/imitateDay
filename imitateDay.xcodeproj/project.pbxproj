@@ -28,6 +28,17 @@
 		FF94523E1C21AD2B002149D0 /* MainTableView+PullRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94523D1C21AD2B002149D0 /* MainTableView+PullRefresh.swift */; };
 		FF9452401C21BAEC002149D0 /* SPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94523F1C21BAEC002149D0 /* SPullToRefresh.swift */; };
 		FFAF0F971C25622A005F8857 /* NetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAF0F961C25622A005F8857 /* NetManager.swift */; };
+		FFBFDCCC1C26D8AF006A28F4 /* 798 in Resources */ = {isa = PBXBuildFile; fileRef = FFBFDCC21C26D8AF006A28F4 /* 798 */; };
+		FFBFDCCD1C26D8AF006A28F4 /* Classify in Resources */ = {isa = PBXBuildFile; fileRef = FFBFDCC31C26D8AF006A28F4 /* Classify */; };
+		FFBFDCCE1C26D8AF006A28F4 /* Details in Resources */ = {isa = PBXBuildFile; fileRef = FFBFDCC41C26D8AF006A28F4 /* Details */; };
+		FFBFDCCF1C26D8AF006A28F4 /* events in Resources */ = {isa = PBXBuildFile; fileRef = FFBFDCC51C26D8AF006A28F4 /* events */; };
+		FFBFDCD01C26D8AF006A28F4 /* Experience in Resources */ = {isa = PBXBuildFile; fileRef = FFBFDCC61C26D8AF006A28F4 /* Experience */; };
+		FFBFDCD11C26D8AF006A28F4 /* More in Resources */ = {isa = PBXBuildFile; fileRef = FFBFDCC71C26D8AF006A28F4 /* More */; };
+		FFBFDCD21C26D8AF006A28F4 /* Nears in Resources */ = {isa = PBXBuildFile; fileRef = FFBFDCC81C26D8AF006A28F4 /* Nears */; };
+		FFBFDCD31C26D8AF006A28F4 /* themes in Resources */ = {isa = PBXBuildFile; fileRef = FFBFDCC91C26D8AF006A28F4 /* themes */; };
+		FFBFDCD41C26D8AF006A28F4 /* 三里屯 in Resources */ = {isa = PBXBuildFile; fileRef = FFBFDCCA1C26D8AF006A28F4 /* 三里屯 */; };
+		FFBFDCD51C26D8AF006A28F4 /* 南锣鼓巷 in Resources */ = {isa = PBXBuildFile; fileRef = FFBFDCCB1C26D8AF006A28F4 /* 南锣鼓巷 */; };
+		FFBFDCD71C26DBA2006A28F4 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBFDCD61C26DBA2006A28F4 /* DataParser.swift */; };
 		FFD89DBE1C1D81F6007F4479 /* TabViewStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD89DBD1C1D81F6007F4479 /* TabViewStack.swift */; };
 		FFF2FAD51C1DA81B00C00CA7 /* EveryDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF2FAD41C1DA81B00C00CA7 /* EveryDayCell.xib */; };
 		FFF2FAD71C1DA88500C00CA7 /* EveryDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2FAD61C1DA88500C00CA7 /* EveryDayCell.swift */; };
@@ -80,6 +91,17 @@
 		FF94523D1C21AD2B002149D0 /* MainTableView+PullRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainTableView+PullRefresh.swift"; sourceTree = "<group>"; };
 		FF94523F1C21BAEC002149D0 /* SPullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPullToRefresh.swift; sourceTree = "<group>"; };
 		FFAF0F961C25622A005F8857 /* NetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetManager.swift; sourceTree = "<group>"; };
+		FFBFDCC21C26D8AF006A28F4 /* 798 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 798; sourceTree = "<group>"; };
+		FFBFDCC31C26D8AF006A28F4 /* Classify */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Classify; sourceTree = "<group>"; };
+		FFBFDCC41C26D8AF006A28F4 /* Details */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Details; sourceTree = "<group>"; };
+		FFBFDCC51C26D8AF006A28F4 /* events */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = events; sourceTree = "<group>"; };
+		FFBFDCC61C26D8AF006A28F4 /* Experience */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Experience; sourceTree = "<group>"; };
+		FFBFDCC71C26D8AF006A28F4 /* More */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = More; sourceTree = "<group>"; };
+		FFBFDCC81C26D8AF006A28F4 /* Nears */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Nears; sourceTree = "<group>"; };
+		FFBFDCC91C26D8AF006A28F4 /* themes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = themes; sourceTree = "<group>"; };
+		FFBFDCCA1C26D8AF006A28F4 /* 三里屯 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "三里屯"; sourceTree = "<group>"; };
+		FFBFDCCB1C26D8AF006A28F4 /* 南锣鼓巷 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "南锣鼓巷"; sourceTree = "<group>"; };
+		FFBFDCD61C26DBA2006A28F4 /* DataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
 		FFD89DBD1C1D81F6007F4479 /* TabViewStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewStack.swift; sourceTree = "<group>"; };
 		FFF2FAD41C1DA81B00C00CA7 /* EveryDayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EveryDayCell.xib; sourceTree = "<group>"; };
 		FFF2FAD61C1DA88500C00CA7 /* EveryDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EveryDayCell.swift; sourceTree = "<group>"; };
@@ -188,6 +210,7 @@
 		FF7D4E881C17271600053948 = {
 			isa = PBXGroup;
 			children = (
+				FFBFDCC11C26D8AF006A28F4 /* CustomData */,
 				85D7F0A7FD4712393F6BB174 /* Frameworks */,
 				E4651B8A0D49949488BC8443 /* Pods */,
 				FF7D4E921C17271600053948 /* Products */,
@@ -210,11 +233,11 @@
 		FF7D4E931C17271600053948 /* imitateDay */ = {
 			isa = PBXGroup;
 			children = (
-				FFAF0F951C2561CE005F8857 /* net */,
 				FF7723351C19BF8500C144BF /* UI */,
 				FF77232F1C19BCEA00C144BF /* constant */,
 				FF2FFBBB1C1B28E700B1A8F0 /* extensions */,
 				FF9452411C21C3B3002149D0 /* model */,
+				FFAF0F951C2561CE005F8857 /* net */,
 				FF7723321C19BDBC00C144BF /* theme */,
 				FF7D4E941C17271600053948 /* AppDelegate.swift */,
 				FF7D4E9B1C17271600053948 /* Assets.xcassets */,
@@ -247,6 +270,7 @@
 		FF9452411C21C3B3002149D0 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				FFBFDCD61C26DBA2006A28F4 /* DataParser.swift */,
 				FF928CDA1C229C3000F07921 /* DayModel.swift */,
 			);
 			path = model;
@@ -257,7 +281,24 @@
 			children = (
 				FFAF0F961C25622A005F8857 /* NetManager.swift */,
 			);
-			name = net;
+			path = net;
+			sourceTree = "<group>";
+		};
+		FFBFDCC11C26D8AF006A28F4 /* CustomData */ = {
+			isa = PBXGroup;
+			children = (
+				FFBFDCC21C26D8AF006A28F4 /* 798 */,
+				FFBFDCC31C26D8AF006A28F4 /* Classify */,
+				FFBFDCC41C26D8AF006A28F4 /* Details */,
+				FFBFDCC61C26D8AF006A28F4 /* Experience */,
+				FFBFDCC71C26D8AF006A28F4 /* More */,
+				FFBFDCC81C26D8AF006A28F4 /* Nears */,
+				FFBFDCC51C26D8AF006A28F4 /* events */,
+				FFBFDCC91C26D8AF006A28F4 /* themes */,
+				FFBFDCCA1C26D8AF006A28F4 /* 三里屯 */,
+				FFBFDCCB1C26D8AF006A28F4 /* 南锣鼓巷 */,
+			);
+			path = CustomData;
 			sourceTree = "<group>";
 		};
 		FFD89DBC1C1D8147007F4479 /* components */ = {
@@ -378,8 +419,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFBFDCD41C26D8AF006A28F4 /* 三里屯 in Resources */,
+				FFBFDCD21C26D8AF006A28F4 /* Nears in Resources */,
 				FF7D4E9F1C17271600053948 /* LaunchScreen.storyboard in Resources */,
+				FFBFDCCC1C26D8AF006A28F4 /* 798 in Resources */,
+				FFBFDCD51C26D8AF006A28F4 /* 南锣鼓巷 in Resources */,
+				FFBFDCCD1C26D8AF006A28F4 /* Classify in Resources */,
+				FFBFDCD11C26D8AF006A28F4 /* More in Resources */,
+				FFBFDCCF1C26D8AF006A28F4 /* events in Resources */,
 				FF7D4E9C1C17271600053948 /* Assets.xcassets in Resources */,
+				FFBFDCD01C26D8AF006A28F4 /* Experience in Resources */,
+				FFBFDCD31C26D8AF006A28F4 /* themes in Resources */,
+				FFBFDCCE1C26D8AF006A28F4 /* Details in Resources */,
 				FFF2FAD51C1DA81B00C00CA7 /* EveryDayCell.xib in Resources */,
 				FF7D4E9A1C17271600053948 /* Main.storyboard in Resources */,
 			);
@@ -462,6 +513,7 @@
 				FF77233D1C19C1E500C144BF /* ExplorerViewController.swift in Sources */,
 				FF77233B1C19C1A800C144BF /* MainViewController.swift in Sources */,
 				FF94523A1C218F7E002149D0 /* MainTableView.swift in Sources */,
+				FFBFDCD71C26DBA2006A28F4 /* DataParser.swift in Sources */,
 				FF928CDB1C229C3000F07921 /* DayModel.swift in Sources */,
 				FFAF0F971C25622A005F8857 /* NetManager.swift in Sources */,
 				FFF2FAD71C1DA88500C00CA7 /* EveryDayCell.swift in Sources */,
