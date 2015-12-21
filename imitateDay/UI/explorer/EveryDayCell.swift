@@ -20,12 +20,14 @@ class EveryDayCell: UITableViewCell {
     
     var day:Day? {
         didSet {
-            lblCellTitle.text = day?.events?.last?.title
+            lblCellTitle.text = day?.events?.last?.feeltitle
             lblMonth.text = day?.month
             lblDay.text = day?.day
-
-            let imageURL = NSURL(string: day?.events!.last!.imgs!.last! ?? "quesheng") // ?? "quesheng"
-            let resource = Resource(downloadURL: imageURL!, cacheKey: "your_customized_key")
+            lblTitle.text = day?.events?.last?.title
+            lblSubTitle.text = day?.events?.last?.address
+            
+            let imageURL = NSURL(string: day?.events!.last!.imgs!.last! ?? "quesheng")
+            let resource = Resource(downloadURL: imageURL!, cacheKey: imageURL?.URLString)
             imgBG.kf_setImageWithResource(resource, placeholderImage: UIImage(named: "quesheng")!)
         }
     }

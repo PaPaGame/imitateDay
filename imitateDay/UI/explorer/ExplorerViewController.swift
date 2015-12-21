@@ -126,4 +126,9 @@ extension ExplorerViewController: UITableViewDelegate, UITableViewDataSource {
             return 253
         }
     }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        
+        return self.allData?.list?.count ?? 0
+    }
 }
