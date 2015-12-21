@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 class DayModel: NSObject {
     
@@ -37,6 +38,38 @@ class Day: NSObject {
     var data: String?
     var events:[EventModel]?
     var themes:[ThemeModel]?
+    
+    static func parse(data: [AnyObject]?) -> [Day]{
+        var result: [Day] = [];
+        data?.forEach{
+            let d = Day();
+            let dayJson = JSON($0);
+            if let date = dayJson["date"].rawString() {
+                d.data = date;
+            }
+            
+            if let events = dayJson["events"].array {
+                d.events = [];
+                events.forEach{
+                    var e = EventModel();
+                    e.parse($0.rawValue);
+                    d.events?.append(e);
+                }
+            }
+            
+            if let themes = dayJson["themes"].array {
+                d.themes = [];
+                themes.forEach{
+                    var t = ThemeModel();
+                    t.parse($0.rawValue);
+                    d.themes?.append(t);
+                }
+            }
+            
+            result.append(d);
+        }
+        return result;
+    }
 }
 
 class EventModel: NSObject {
@@ -82,3 +115,32 @@ class EventModel: NSObject {
 class ThemeModel: NSObject {
     
 }
+
+//ModelParserType
+protocol ModelParserType{
+    
+    ///mirror缓存
+//    static var mirror: Mirror?{get set}
+    
+    ///解析数据
+    mutating func parse(data: AnyObject?)
+}
+extension ModelParserType where Self: NSObject{
+    
+    mutating func parse(data: AnyObject?){
+        guard let data = data else {return;}
+//        guard let mirror = Self.mirror else {
+//            Self.mirror = Mirror(reflecting: self);
+//            parse(data);
+//            return;
+//        }
+        let mirror = Mirror(reflecting: self);
+        mirror.children.forEach{
+            guard let n = $0.label else {return;}
+            guard let v = data.valueForKey(n) else {return;}
+            self.setValue(v, forKey: n);
+        }
+    }
+}
+extension ThemeModel: ModelParserType{}
+extension EventModel: ModelParserType{}

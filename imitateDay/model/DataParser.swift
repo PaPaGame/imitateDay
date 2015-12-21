@@ -22,7 +22,8 @@ class DataParser {
         let result = DayModel()
         result.msg = jsonData!["msg"].rawString()
         result.code = jsonData["code"].int
-        result.list = jsonData["list"].arrayObject as? [Day]
+//        result.list = jsonData["list"].arrayObject as? [Day]
+        result.list = Day.parse(jsonData["list"].arrayObject);
         
         return result
     }
