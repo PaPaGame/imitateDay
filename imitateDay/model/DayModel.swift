@@ -35,9 +35,23 @@ class DayModel: NSObject {
 }
 
 class Day: NSObject {
-    var data: String?
+    var data: String? {
+        willSet {
+            let dateFormatter = NSDateFormatter()
+            dateFormatter.timeZone = NSTimeZone.defaultTimeZone()
+            dateFormatter.dateFormat = "yy-MM-dd"
+            let tempDate = newValue
+            let mon = (tempDate! as NSString).substringWithRange(NSRange(location: 5, length: 2))
+            
+            self.month = dateFormatter.shortMonthSymbols[Int(mon)! - 1]
+            self.day = (tempDate! as NSString).substringWithRange(NSRange(location: 8, length: 2))
+        }
+    }
     var events:[EventModel]?
     var themes:[ThemeModel]?
+    
+    var day: String?
+    var month: String?
     
     static func parse(data: [AnyObject]?) -> [Day]{
         var result: [Day] = [];

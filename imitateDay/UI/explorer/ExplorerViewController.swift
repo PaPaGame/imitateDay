@@ -17,6 +17,8 @@ class ExplorerViewController: MainViewController, TabViewStackProtocol{
     
     private var albumView: MainTableView!
     
+    private var allData: DayModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -80,7 +82,8 @@ class ExplorerViewController: MainViewController, TabViewStackProtocol{
                         return
                     }
                     // dayView.reload
-                    
+                    self.allData = data
+                    self.dayView.reloadData()
                 }
             }
         })
@@ -102,10 +105,11 @@ extension ExplorerViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:UITableViewCell
-        
+        let event = self.allData?.list![indexPath.section]
         switch tableView{
         case dayView:
-            cell = EveryDayCell()
+            cell = EveryDayCell.everyDayCell(dayView)
+            (cell as! EveryDayCell).day = event
         case albumView:
             cell = EveryDayCell()
         default:
@@ -113,5 +117,13 @@ extension ExplorerViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         return cell
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if indexPath.row == 1 {
+            return 220
+        } else {
+            return 253
+        }
     }
 }

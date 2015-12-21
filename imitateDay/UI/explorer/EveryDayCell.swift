@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class EveryDayCell: UITableViewCell {
     
@@ -17,10 +18,15 @@ class EveryDayCell: UITableViewCell {
     @IBOutlet weak var lblSubTitle: UILabel!
     @IBOutlet weak var imgBG: UIImageView!
     
-    var data:Day? {
+    var day:Day? {
         didSet {
-//            lblCellTitle.text = data?.events?.last.
-            
+            lblCellTitle.text = day?.events?.last?.title
+            lblMonth.text = day?.month
+            lblDay.text = day?.day
+
+            let imageURL = NSURL(string: day?.events!.last!.imgs!.last! ?? "quesheng") // ?? "quesheng"
+            let resource = Resource(downloadURL: imageURL!, cacheKey: "your_customized_key")
+            imgBG.kf_setImageWithResource(resource, placeholderImage: UIImage(named: "quesheng")!)
         }
     }
     
